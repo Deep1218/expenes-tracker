@@ -6,9 +6,6 @@
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
   cursor: pointer;
-  .brand-icon {
-    margin-right: 2rem;
-  }
   &:hover {
     background: #adc2a8;
   }
@@ -18,4 +15,7 @@ mat-nav-list {
 }
 .mat-mdc-nav-list .mat-mdc-list-item {
   border-radius: 0.4em !important;
+}
+.active-link {
+  background: #adc2a8;
 }
