@@ -5,7 +5,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { DashboardCardComponent } from '../../components/dashboard-card/dashboard-card.component';
+import { StatcCardComponent } from '../../components/statc-card/statc-card.component';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -34,7 +34,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     MatSelectModule,
     MatFormFieldModule,
     MatGridListModule,
-    DashboardCardComponent,
+    StatcCardComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',

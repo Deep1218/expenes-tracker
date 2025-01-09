@@ -6,7 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
-  selector: 'app-dashboard-card',
+  selector: 'app-statc-card',
   imports: [
     MatCardModule,
     MatButtonModule,
@@ -14,10 +14,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatProgressBarModule,
     MatGridListModule,
   ],
-  templateUrl: './dashboard-card.component.html',
-  styleUrl: './dashboard-card.component.scss',
+  templateUrl: './statc-card.component.html',
+  styleUrl: './statc-card.component.scss',
 })
-export class DashboardCardComponent {
+export class StatcCardComponent {
   icon = input.required();
   amount = input.required();
   statcTxt = input.required();
