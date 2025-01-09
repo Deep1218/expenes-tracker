@@ -1,6 +1,7 @@
 .brand {
   background: #cdddc9;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 1.8em;
   border-top-left-radius: 0.4em;
@@ -10,6 +11,7 @@
     background: #adc2a8;
   }
 }
+// nav-links
 mat-nav-list {
   margin-top: 2em;
 }

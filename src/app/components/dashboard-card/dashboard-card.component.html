@@ -1,0 +1,13 @@
+<div class="container">
+  <button
+    [disableRipple]="true"
+    mat-fab
+    aria-label="Example icon button with a delete icon"
+  >
+    <mat-icon>{{ icon() }}</mat-icon>
+  </button>
+  <div class="text-container">
+    <span class="amount-txt">₹ {{ amount() }}</span>
+    <span class="txt">{{ statcTxt() }}</span>
+  </div>
+</div>
