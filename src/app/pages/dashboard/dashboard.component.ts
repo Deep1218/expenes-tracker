@@ -6,6 +6,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { StatcCardComponent } from '../../components/statc-card/statc-card.component';
+import { ChartComponent } from '../../components/chart/chart.component';
+import { ChartType } from 'chart.js';
+import { FormsModule } from '@angular/forms';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -35,20 +38,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
     MatFormFieldModule,
     MatGridListModule,
     StatcCardComponent,
+    ChartComponent,
+    FormsModule,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class DashboardComponent {
-  selectChartType = 'bar';
+  selectChartType: ChartType = 'bar';
   selected = 'daily';
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   clickedRows(data: PeriodicElement) {
     console.log('Cliecked on row', data);
-  }
-  test() {
-    console.log('Value===>', this.selectChartType);
   }
 }

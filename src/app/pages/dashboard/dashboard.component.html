@@ -1,8 +1,8 @@
-<mat-grid-list cols="4" rowHeight="5.83em" gutterSize="10">
-  <mat-grid-tile colspan="3" rowspan="3">
+<mat-grid-list cols="6" rowHeight="5.83em" gutterSize="10">
+  <mat-grid-tile colspan="4" rowspan="3">
     <mat-card appearance="outlined">
       <mat-card-content>
-        <div class="test">
+        <div class="statcs-container">
           <app-statc-card
             [icon]="'currency_rupee_circle'"
             [amount]="500"
@@ -23,7 +23,7 @@
     </mat-card>
   </mat-grid-tile>
 
-  <mat-grid-tile colspan="1" rowspan="12">
+  <mat-grid-tile colspan="2" rowspan="12">
     <!-- [style.max-width]="'400px'" -->
     <mat-card appearance="outlined">
       <mat-card-header>
@@ -71,7 +71,7 @@
     </mat-card>
   </mat-grid-tile>
 
-  <mat-grid-tile colspan="3" rowspan="9">
+  <mat-grid-tile colspan="4" rowspan="9">
     <mat-card appearance="outlined">
       <mat-card-content>
         <div class="graph-header">
@@ -85,17 +85,19 @@
           </mat-form-field>
           <section>
             <mat-button-toggle-group
-              (valueChange)="test()"
+              [(ngModel)]="selectChartType"
               name="chart"
               aria-label="select chart type"
               [hideSingleSelectionIndicator]="true"
             >
               <mat-button-toggle isClicked value="bar">Bar</mat-button-toggle>
-              <mat-button-toggle value="pie">Pie</mat-button-toggle>
+              <mat-button-toggle value="doughnut">Pie</mat-button-toggle>
             </mat-button-toggle-group>
           </section>
         </div>
-        <p>working</p>
+        <div class="chart-container">
+          <app-chart [type]="selectChartType"></app-chart>
+        </div>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>

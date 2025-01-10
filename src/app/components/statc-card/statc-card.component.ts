@@ -21,9 +21,4 @@ export class StatcCardComponent {
   icon = input.required();
   amount = input.required();
   statcTxt = input.required();
-  cardTitle = 'Chihuahua';
-  maxWidth = '100px';
-  longText = `The Chihuahua is a Mexican breed of toy dog. It is named for the
-  Mexican state of Chihuahua and is among the smallest of all dog breeds. It is
-  usually kept as a companion animal or for showing.`;
 }
