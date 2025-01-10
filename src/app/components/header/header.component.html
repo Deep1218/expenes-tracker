@@ -1,13 +1,14 @@
 <mat-toolbar>
   <div class="left-side">
     <button
+      (click)="onClicked()"
       mat-icon-button
       class="example-icon"
       aria-label="Example icon-button with menu icon"
     >
       <mat-icon>menu</mat-icon>
     </button>
-    <span>Current Page name</span>
+    <span>{{ pageTitle() }}</span>
   </div>
   <div class="right-side">
     <button

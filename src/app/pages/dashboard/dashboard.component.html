@@ -24,12 +24,12 @@
   </mat-grid-tile>
 
   <mat-grid-tile colspan="2" rowspan="12">
-    <!-- [style.max-width]="'400px'" -->
     <mat-card appearance="outlined">
-      <mat-card-header>
-        <mat-card-title>Last 10 Transactions</mat-card-title>
-      </mat-card-header>
       <mat-card-content>
+        <div class="graph-header">
+          <p>Last 10 Transactions</p>
+          <button mat-stroked-button>Add</button>
+        </div>
         <table
           mat-table
           [dataSource]="dataSource"

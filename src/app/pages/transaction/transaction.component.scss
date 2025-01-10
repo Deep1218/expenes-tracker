@@ -1,0 +1,35 @@
+section {
+  height: calc(100vh - 8.7em);
+  padding: 2em;
+
+  .data-tbl {
+    border: solid 1px;
+    border-radius: 0.4em;
+    max-height: 44em;
+    overflow: auto;
+    tbody {
+      > tr {
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  .tbl-container {
+    padding: 2em;
+    border: solid 1px;
+    border-radius: 1em;
+    background-color: white;
+    .search-and-add {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2em;
+      .mat-mdc-form-field-subscript-wrapper {
+        display: none !important;
+      }
+    }
+  }
+}

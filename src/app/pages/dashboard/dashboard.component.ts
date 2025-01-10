@@ -9,6 +9,7 @@ import { StatcCardComponent } from '../../components/statc-card/statc-card.compo
 import { ChartComponent } from '../../components/chart/chart.component';
 import { ChartType } from 'chart.js';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -33,6 +34,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   imports: [
     MatCardModule,
     MatTableModule,
+    MatButtonModule,
     MatButtonToggleModule,
     MatSelectModule,
     MatFormFieldModule,

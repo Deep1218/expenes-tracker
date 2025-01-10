@@ -1,3 +1,11 @@
 canvas {
   margin: 2em;
+  &.bar {
+    height: 24em !important;
+    width: 48em !important;
+  }
+  &.doughnut {
+    height: 22em !important;
+    width: 22em !important;
+  }
 }

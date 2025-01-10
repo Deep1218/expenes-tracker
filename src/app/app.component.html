@@ -1,7 +1,12 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav opened mode="side"><app-sidebar></app-sidebar></mat-sidenav>
+  <mat-sidenav [opened]="opened" mode="side">
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
   <mat-sidenav-content class="content">
-    <app-header></app-header>
+    <app-header
+      [pageTitle]="headTitle"
+      (collapsed)="collapsedClicked($event)"
+    ></app-header>
     <router-outlet />
-   </mat-sidenav-content>
+  </mat-sidenav-content>
 </mat-sidenav-container>

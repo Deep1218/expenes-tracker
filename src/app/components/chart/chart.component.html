@@ -1,4 +1,8 @@
 <!-- <p>chart works!</p> -->
 @if(isBrowser){
-<canvas #chart_canvas></canvas>
+<canvas
+  #chart_canvas
+  [class.bar]="type() == 'bar'"
+  [class.doughnut]="type() == 'doughnut'"
+></canvas>
 }
