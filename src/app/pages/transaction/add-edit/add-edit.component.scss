@@ -1,27 +1,41 @@
 section {
   height: calc(100vh - 8.7em);
   padding: 2em;
-
-  .data-tbl {
-    border: solid 1px;
-    border-radius: 0.4em;
-    max-height: 44em;
-    overflow: auto;
-  }
-
-  .tbl-container {
+  .container {
     padding: 2em;
     border: solid 1px;
     border-radius: 1em;
     background-color: white;
-    .search-and-add {
+    .control-container {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       margin-bottom: 2em;
-      // .mat-mdc-form-field-subscript-wrapper {
-      //   display: none !important;
-      // }
+      .txt {
+        font-size: larger;
+        font-weight: 400;
+        margin-left: 0.6em;
+      }
     }
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+
+  .form-control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .form-control mat-form-field {
+    width: 100%;
+    margin: 0 1em;
+  }
+
+  .submit-btn {
+    width: 8em;
   }
 }

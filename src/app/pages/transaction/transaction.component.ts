@@ -10,6 +10,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -49,6 +50,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     ReactiveFormsModule,
     MatButtonModule,
     MatIconModule,
+    RouterModule,
   ],
   templateUrl: './transaction.component.html',
   styleUrl: './transaction.component.scss',
